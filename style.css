@@ -1,98 +1,64 @@
+/* General Styles */
 body {
-    background-color: #121212;
-    color: white;
-    font-family: Roboto, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.container {
-    display: flex;
-    max-width: 1000px;
-    margin: 20px auto;
-}
-
-.sidebar {
-    background: #1e1e1e;
-    padding: 20px;
-    width: 250px;
-    border-radius: 10px;
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
 }
 
-.profile img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 2px solid white;
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-.contact p {
-    font-size: 14px;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-.social-icons a {
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    font-size: 20px;
-    margin: 0 5px;
+    font-weight: bold;
 }
 
-.content {
-    flex: 1;
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.about-me, .details, .skills {
     padding: 20px;
-}
-
-.about img {
-    width: 150px;
-    border-radius: 10px;
-    margin-right: 10px;
-}
-
-.about-content {
-    display: flex;
-    align-items: center;
-}
-
-.skills-container {
-    margin-top: 10px;
-}
-
-.skill {
-    margin-bottom: 10px;
-}
-
-.bar {
-    width: 100%;
-    background: #333;
-    height: 8px;
+    margin: 20px;
+    background-color: #fff;
     border-radius: 5px;
-    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.progress {
-    height: 100%;
-    background: #3498db;
+h1, h2, h3 {
+    color: #333;
+}
+
+.skill-category {
+    margin-bottom: 20px;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-category ul li {
+    background-color: #e2e2e2;
+    margin: 5px 0;
+    padding: 10px;
     border-radius: 5px;
 }
-
-nav{ z-index: 2; }
-nav ul{
-  display: flex;
-	gap: 26px;
-	padding: 0 30px;
-}
-nav button{
-  font-size: clamp(12px, 0.2727rem + 2.7273vw, 15px);
-	color: var(--white-1);
-	letter-spacing: 1px;
-  margin: 15px 0;
-	transition: color 0.3s text-shadow 0.3s;
-}
-nav button:hover{	color: var(--white-3); }
-nav .current,
-nav .current:hover{
-  color: var(--blue-1);
-  text-shadow: 0 0 1px var(--blue-2);
-}
-
-style
