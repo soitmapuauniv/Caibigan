@@ -1,22 +1,19 @@
-/* General Styles */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ddd;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+    background-color: #111;
+    padding: 10px;
     text-align: center;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
+    margin: 0;
     padding: 0;
 }
 
@@ -26,47 +23,53 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ddd;
     text-decoration: none;
-    font-weight: bold;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-.about-me, .details, .skills {
+.profile {
+    display: flex;
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: #222;
     padding: 20px;
-    margin: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1, h2, h3 {
-    color: #333;
-}
-
-.skill-category {
-    margin-bottom: 20px;
-}
-
-.skill-category ul {
-    list-style: none;
-    padding: 0;
-}
-
-.skill-category ul li {
-    background-color: #e2e2e2;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.sidebar {
-    background: #1e1e1e;
-    padding: 20px;
-    width: 250px;
     border-radius: 10px;
+}
+
+.left {
+    flex: 1;
     text-align: center;
+    padding-right: 20px;
+}
+
+.left img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.right {
+    flex: 2;
+}
+
+.contact-info li {
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+.social-links a {
+    color: #ddd;
+    margin: 0 10px;
+}
+
+.skills {
+    margin-top: 20px;
+}
+
+.skills h4 {
+    margin-bottom: 10px;
+}
+
+.skills p {
+    margin: 5px 0;
 }
