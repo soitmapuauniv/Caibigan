@@ -75,4 +75,24 @@ body {
     border-radius: 5px;
 }
 
+nav{ z-index: 2; }
+nav ul{
+  display: flex;
+	gap: 26px;
+	padding: 0 30px;
+}
+nav button{
+  font-size: clamp(12px, 0.2727rem + 2.7273vw, 15px);
+	color: var(--white-1);
+	letter-spacing: 1px;
+  margin: 15px 0;
+	transition: color 0.3s text-shadow 0.3s;
+}
+nav button:hover{	color: var(--white-3); }
+nav .current,
+nav .current:hover{
+  color: var(--blue-1);
+  text-shadow: 0 0 1px var(--blue-2);
+}
+
 style
