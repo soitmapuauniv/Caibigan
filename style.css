@@ -21,6 +21,8 @@ body {
     position: sticky;
     top: 0;
     height: 100vh;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .profile-img {
@@ -64,9 +66,8 @@ body {
     background-color: #333;
     padding: 10px;
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 .navbar ul {
@@ -90,37 +91,37 @@ body {
     color: #00aaff;
 }
 
-/* Main Content Styles */
-.main-content {
+/* Main Content Box Styles */
+.content-box {
     flex: 1;
     padding: 20px;
-    overflow-y: auto;
-    background-color: #1e1e1e;
+    background-color: #222;
     border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
     margin: 20px;
 }
 
-.content-box {
-    background-color: #333;
-    padding: 20px;
+/* Section Styles */
+section {
     margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.content-box h2 {
+section h2 {
     color: #f0f0f0;
+    margin-bottom: 10px;
 }
 
-.content-box p {
+section p {
     color: #bbb;
 }
 
 /* Skills Section */
-.skills h4 {
-    margin-bottom: 10px;
+.coding-skills h4, .other-skills h4 {
+    color: #ddd;
 }
 
-.skills p {
+.coding-skills p, .other-skills p {
+    color: #bbb;
     margin: 5px 0;
 }
