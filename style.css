@@ -27,39 +27,48 @@ nav ul li a {
     text-decoration: none;
 }
 
-.profile {
+/* Container holding the sidebar and main content */
+.container {
     display: flex;
-    max-width: 1000px;
-    margin: 50px auto;
+    height: 100vh; /* Full height of the viewport */
+}
+
+/* Sidebar section styling */
+.sidebar {
     background-color: #222;
+    width: 300px;
     padding: 20px;
-    border-radius: 10px;
-}
-
-.left {
-    flex: 1;
     text-align: center;
-    padding-right: 20px;
+    position: sticky;
+    top: 0;
+    height: 100vh; /* Sidebar should cover the full height */
 }
 
-.left img {
+.sidebar img {
     border-radius: 50%;
     width: 150px;
     height: 150px;
 }
 
-.right {
-    flex: 2;
+.sidebar h2 {
+    margin-top: 15px;
 }
 
 .contact-info li {
     list-style-type: none;
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 .social-links a {
     color: #ddd;
     margin: 0 10px;
+}
+
+/* Main content styling */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto; /* Allows the content to scroll if too long */
 }
 
 .skills {
