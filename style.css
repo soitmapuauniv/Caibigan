@@ -4,12 +4,13 @@ body {
     font-family: Arial, sans-serif;
     background-color: #1a1a1a;
     color: #ddd;
+    display: flex;
 }
 
 /* Container for the sidebar and main content */
 .container {
     display: flex;
-    height: 100vh;
+    width: 100%;
 }
 
 /* Sidebar Styles */
@@ -18,11 +19,16 @@ body {
     width: 250px;
     padding: 20px;
     text-align: center;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
     height: 100vh;
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+    margin-bottom: 20px;
 }
 
 .profile-img {
@@ -68,6 +74,9 @@ body {
     text-align: center;
     border-radius: 8px;
     margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .navbar ul {
@@ -92,21 +101,24 @@ body {
 }
 
 /* Main Content Box Styles */
-.content-box {
+.content {
     flex: 1;
     padding: 20px;
     background-color: #222;
     border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 270px;
     overflow-y: auto;
-    margin: 20px;
 }
 
-/* Section Styles */
-section {
+.content-box {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
+/* Section Styles */
 section h2 {
     color: #f0f0f0;
     margin-bottom: 10px;
@@ -117,11 +129,11 @@ section p {
 }
 
 /* Skills Section */
-.coding-skills h4, .other-skills h4 {
+.skills-section h4 {
     color: #ddd;
 }
 
-.coding-skills p, .other-skills p {
+.skills-section p {
     color: #bbb;
     margin: 5px 0;
 }
