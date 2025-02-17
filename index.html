@@ -3,70 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gian Caibigan - Home</title>
+    <title>Profile</title>
     <link rel="stylesheet" href="style.css">
-</head> 
+</head>
 <body>
-        <div class="container">
-        <aside class="sidebar">
-            <div class="profile">
-                <img src="profile.jpg" alt="Jose Victorino">
-                <h2>Jose Victorino</h2>
-                <p>2nd Year IT Student</p>
-            </div>
-            <div class="contact">
-                <p><strong>📞</strong> (+63) 9284650259</p>
-                <p><strong>📧</strong> josevictorino003@gmail.com</p>
-                <p><strong>🏫</strong> Mapua University</p>
-            </div>
-            <div class="social-icons">
-                <a href="#">🔗</a>
-                <a href="#">📷</a>
-                <a href="#">💼</a>
-            </div>
-        </aside>
-
     <header>
-                <div class="container">
         <nav>
             <ul>
-                <li><a href="index.html">About Me</a></li>
-                <li><a href="achievements.html">Achievements</a></li>
-                <li><a href="experiences.html">Work Experiences</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#course">Course</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-                </div>
     </header>
-
-                <div class="container">
-    <section class="about-me">
-        <h1>Hello, I am Jose Victorino</h1>
-        <p>Aiming to be a future Web Developer. I enjoy programming, especially building websites. I strive to learn more about what it takes to be a Web Developer.</p>
-        <p>When I was in elementary, my initial dream was to become a pilot, to fly to places, and to travel the world. As I grew up, I slowly lost interest in it and took an interest in engineering due to my father being an engineer. In high school, I became interested in photo and video editing, coding, and anything computer related. Now, I took IT because of my initial skills and interest in coding. I enjoy coding, especially with HTML, CSS, JavaScript.</p>
-    </section>
-
-<section class="skills">
-                <h2>Skills</h2>
-                <div class="skills-container">
-                    <div class="skill">
-                        <p>HTML5</p>
-                        <div class="bar"><div class="progress" style="width: 80%;"></div></div>
-                    </div>
-                    <div class="skill">
-                        <p>CSS</p>
-                        <div class="bar"><div class="progress" style="width: 40%;"></div></div>
-                    </div>
-                    <div class="skill">
-                        <p>JavaScript</p>
-                        <div class="bar"><div class="progress" style="width: 20%;"></div></div>
-                    </div>
-                    <div class="skill">
-                        <p>Video Editing</p>
-                        <div class="bar"><div class="progress" style="width: 60%;"></div></div>
-                    </div>
+    <main>
+        <section class="profile">
+            <div class="left">
+                <img src="profile.jpg" alt="Profile Image">
+                <h2>Jose Victorino</h2>
+                <p>2nd Year IT Student</p>
+                <ul class="contact-info">
+                    <li><i class="fa fa-user"></i> Jose Lorenzo L. Victorino</li>
+                    <li><i class="fa fa-phone"></i> (+63) 9284650259</li>
+                    <li><i class="fa fa-envelope"></i> josevictorino003@gmail.com</li>
+                    <li><i class="fa fa-university"></i> Mapua University</li>
+                </ul>
+                <div class="social-links">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
                 </div>
             </div>
-    </section>
+            <div class="right">
+                <section id="about">
+                    <h2>About Me</h2>
+                    <p>Hello, I am Jose Victorino aiming to be a future Web Developer...</p>
+                </section>
+                <section class="skills">
+                    <h3>Skills</h3>
+                    <div class="coding-skills">
+                        <h4>Coding</h4>
+                        <p>HTML 5: 60%</p>
+                        <p>CSS: 40%</p>
+                        <p>JavaScript: 20%</p>
+                        <p>C++: 40%</p>
+                        <p>Java: 40%</p>
+                        <p>Python: 20%</p>
+                    </div>
+                    <div class="other-skills">
+                        <h4>Others</h4>
+                        <p>Image Editing: 40%</p>
+                        <p>Video Editing: 60%</p>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
