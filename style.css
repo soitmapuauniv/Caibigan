@@ -783,13 +783,6 @@ footer{
   .Portfolio .img,
   .Portfolio .Content{ width: 100%; }
 
-  /* --==Course==-- */
-  .Subjects{ gap: 12px; }
-
-  /* --==Course Modals==-- */
-  .course-modal .layout{ width: 700px; }
-  .course-modal .gallery{ grid-template-columns: repeat(2, 1fr); }
-}
 @media(min-width: 740px){
   /* --==Nav Bar==-- */
   nav{
@@ -892,17 +885,6 @@ footer{
   /* --==Portfolio==-- */
   .Portfolio section:not(:last-child){ margin-bottom: 30px; }
 
-  /* --==Course==-- */
-  .Subjects{ grid-template-columns: 1fr; }
-  /* --==Course Modals==-- */
-  .course-modal button{ right: 20px; }
-  .course-modal .layout{
-    width: calc(100% - 30px);
-    padding: 15px;
-  }
-  .course-modal .gallery{ grid-template-columns: 1fr; }
-  .course-modal table td,
-  .course-modal table th{ padding: 3px; }
   /* --==Contact==-- */
   /* Form */
   .Form{ flex-direction: column; }
