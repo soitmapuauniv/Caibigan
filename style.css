@@ -57,14 +57,11 @@ body {
     color: #ddd;
 }
 
-.social-links a {
-    color: #ddd;
-    margin: 0 10px;
+.sidebar .social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 5px;
     text-decoration: none;
-}
-
-.social-links a:hover {
-    color: #00aaff;
 }
 
 /* Navigation Bar Styles */
