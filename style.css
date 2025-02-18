@@ -36,7 +36,9 @@ body {
 .profile-img {
     border-radius: 50%;
     width: 120px;
-    height: 120px;
+    height: auto;
+    object-fit: cover;
+    max-width: 100%;
 }
 
 .sidebar h2 {
@@ -154,7 +156,7 @@ section p {
 }
 
 .progress::after {
-    content: attr(data-percent); /* Display the percentage */
+    content: attr(data-percent);
     position: absolute;
     right: 10px;
     top: 0;
@@ -183,7 +185,6 @@ section p {
     width: 40%;
 }
 
-/* Ensure smooth transitions when switching pages */
 .content-box,
 .navbar {
     transition: margin 0.3s, padding 0.3s;
