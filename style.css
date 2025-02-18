@@ -150,17 +150,38 @@ section p {
     background-color: #00aaff;
     height: 100%;
     border-radius: 10px;
-    text-align: center;
-    color: #fff;
-    line-height: 25px;
-    width: 0;
+    position: relative;
 }
 
-.html-progress { width: 25%; }
-.css-progress { width: 15%; }
-.python-progress { width: 30%; }
-.image-editing-progress { width: 20%; }
-.video-editing-progress { width: 40%; }
+.progress::after {
+    content: attr(data-percent); /* Display the percentage */
+    position: absolute;
+    right: 10px;
+    top: 0;
+    color: #fff;
+    line-height: 25px;
+}
+
+/* Individual skill progress with percentage */
+.html-progress {
+    width: 20%;
+}
+
+.css-progress {
+    width: 15%;
+}
+
+.python-progress {
+    width: 25%;
+}
+
+.image-editing-progress {
+    width: 35%;
+}
+
+.video-editing-progress {
+    width: 40%;
+}
 
 /* Ensure smooth transitions when switching pages */
 .content-box,
