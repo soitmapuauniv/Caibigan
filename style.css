@@ -59,7 +59,7 @@ body {
 .sidebar .social-icons a {
     color: white !important;
     font-size: 20px;
-    margin: 5px;
+    margin: 10px;
     text-decoration: none;
 }
 
@@ -148,11 +148,8 @@ section p {
     width: 0;
 }
 
-.html-progress { width: 60%; }
-.css-progress { width: 40%; }
-.js-progress { width: 20%; }
-.cpp-progress { width: 40%; }
-.java-progress { width: 40%; }
-.python-progress { width: 20%; }
-.image-editing-progress { width: 40%; }
-.video-editing-progress { width: 60%; }
+.html-progress { width: 20%; }
+.css-progress { width: 20%; }
+.python-progress { width: 40%; }
+.image-editing-progress { width: 20%; }
+.video-editing-progress { width: 40%; }
