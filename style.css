@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     margin: 0;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     background-color: #1a1a1a;
     color: #ddd;
     display: flex;
