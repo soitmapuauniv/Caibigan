@@ -69,6 +69,13 @@ body {
     color: #00aaff;
 }
 
+.sidebar .social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 5px;
+    text-decoration: none;
+}
+
 /* Navigation Bar Styles */
 .navbar {
     background-color: #333;
