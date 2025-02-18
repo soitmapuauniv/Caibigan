@@ -34,13 +34,13 @@ body {
 }
 
 .profile-img {
-    border-radius: 50%;  /* Circular profile image */
-    width: 120px;        /* Set a fixed width */
-    height: 120px;        /* Maintain the aspect ratio */
-    object-fit: cover;   /* Ensures the image scales without distortion */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
     max-width: 100%;
     display: block;
-    margin: 0 auto;      /* Center the image */
+    margin: 0 auto;
 }
 
 .sidebar h2 {
@@ -112,7 +112,7 @@ body {
     padding: 40px;
     background-color: #222;
     border-radius: 8px;
-    margin-left: 270px;  /* Leaves space for the sidebar */
+    margin-left: 270px;
     overflow-y: auto;
     height: 100%;
 }
@@ -170,20 +170,20 @@ section p {
 /* Image and Text Container Styles */
 .image-text-container {
     display: flex;
-    align-items: center; /* Aligns image and text vertically */
+    align-items: center;
     margin-bottom: 20px;
 }
 
 .content-image {
-    width: 150px; /* Set the image width */
-    height: auto; /* Maintain aspect ratio */
+    width: 150px;
+    height: auto;
     border-radius: 8px;
-    margin-right: 20px; /* Space between image and text */
+    margin-right: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .text-container {
-    max-width: 70%; /* Adjusts the width of the text */
+    max-width: 70%;
 }
 
 .text-container h2 {
@@ -199,14 +199,35 @@ section p {
     margin-top: 5px;
 }
 
+/* Individual skill progress with percentage */
+.html-progress {
+    width: 20%;
+}
+
+.css-progress {
+    width: 15%;
+}
+
+.python-progress {
+    width: 25%;
+}
+
+.image-editing-progress {
+    width: 35%;
+}
+
+.video-editing-progress {
+    width: 40%;
+}
+
 /* Contact Page Container */
 .contact-container {
-    width: 70%; /* Adjust width as needed */
+    width: 70%;
     background-color: #222;
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 40px auto; /* Centering the form */
+    margin: 40px auto;
 }
 
 .contact-container h1 {
@@ -232,7 +253,7 @@ section p {
 .contact-form .input-group {
     display: flex;
     justify-content: space-between;
-    gap: 20px; /* Space between name and email fields */
+    gap: 20px;
 }
 
 .contact-form input,
@@ -266,27 +287,6 @@ section p {
 
 .contact-form .btn:hover {
     background-color: #0088cc;
-}
-
-/* Individual skill progress with percentage */
-.html-progress {
-    width: 20%;
-}
-
-.css-progress {
-    width: 15%;
-}
-
-.python-progress {
-    width: 25%;
-}
-
-.image-editing-progress {
-    width: 35%;
-}
-
-.video-editing-progress {
-    width: 40%;
 }
 
 /* Ensures smooth transitions */
