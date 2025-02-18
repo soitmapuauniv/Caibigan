@@ -37,7 +37,7 @@ body {
     border-radius: 50%;
     width: 120px;
     height: auto;
-    object-fit: cover;
+    object-fit: contain;
     max-width: 100%;
 }
 
