@@ -248,6 +248,8 @@ section p {
 .contact-form {
     display: flex;
     flex-direction: column;
+    max-width: 600px; /* Set max width for the entire form */
+    margin: 0 auto; /* Center the form */
 }
 
 .contact-form .input-group {
@@ -256,7 +258,8 @@ section p {
     gap: 20px;
 }
 
-.contact-form input,
+.contact-form input[type="text"],
+.contact-form input[type="email"],
 .contact-form textarea {
     background-color: #3c3c3c; /* Slightly lighter background */
     border: 1px solid #ccc;
@@ -265,12 +268,20 @@ section p {
     margin-bottom: 20px;
     font-size: 16px;
     color: #ddd;
-    width: 100%;
+    width: 100%; /* Ensure inputs take up available width */
+    max-width: 100%; /* Prevent inputs from exceeding container */
+    box-sizing: border-box; /* Include padding and border in the element's width/height */
     transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="text"] {
+    width: 100%;
+    max-width: 400px; /* Limit width for better control */
 }
 
 .contact-form textarea {
     resize: none;
+    height: 150px; /* Define height for textarea */
 }
 
 /* Highlight the input and textarea fields when focused */
