@@ -316,13 +316,3 @@ textarea {
     margin-bottom: 15px;
     box-sizing: border-box;
 }
-
-.fa {
-    color: #00aaff;
-    font-size: 18px;
-    margin-right: 5px;
-}
-
-p {
-    font-size: 18px; /* Adjust font size for text with emojis */
-}
